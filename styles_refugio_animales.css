@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #4caf50;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #dfffd6;
+}
+
+.container {
+    flex: 1;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.animals {
+    margin-bottom: 2rem;
+}
+
+.animals h2 {
+    font-size: 2rem;
+    color: #4caf50;
+    margin-bottom: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 150px;
+}
+
+.animal {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.animal img {
+    width: 100%; 
+    height: 45vh; 
+    object-fit: fill; 
+    border-bottom: 1px solid #555;
+    margin-bottom: 1rem;
+}
+
+.animal h3 {
+    font-size: 1.5rem;
+    color: #4caf50;
+    margin-bottom: 0.5rem;
+}
+
+.animal p {
+    color: #555;
+}
+
+.adoption-info, .donation-info {
+    margin-bottom: 2rem;
+}
+
+.adoption-info h2, .donation-info h2 {
+    font-size: 2rem;
+    color: #4caf50;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background: #4caf50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-weight: bold;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Una sola columna */
+        gap: 1rem; /* Reducir el espacio entre elementos */
+    }
+
+    .animal img {
+        height: 50vh; /* Reducir altura en móviles */
+        object-fit: cover; /* Cambiar a cover para mejor visualización */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Reducir tamaño de título */
+    }
+
+    main {
+        padding: 0.5rem; /* Reducir padding */
+    }
+}
